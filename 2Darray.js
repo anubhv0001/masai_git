@@ -1,8 +1,7 @@
 let arr=[
     [1,2],
-    [4,5],
-    [7,8]
-    ]
+    [4,5],  
+]
     let M=arr.length;
     let N=arr[0].length;
     
