@@ -1,0 +1,3 @@
+let taskOne=console.log("Task One");
+let taskTwo=console.log("Task Two");
+let taskThree=console.log("Task Three");
