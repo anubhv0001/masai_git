@@ -3,7 +3,7 @@ function findMatching(n,m,str,pat){
     for(let i=0;i<n-m;i++){
       let match=true;
       for (let j=0;j<m;j++){
-        if (str[i+j]!=pat){
+        if (str[i+j]!=pat[j]){
           match=false;
           break;
         }
