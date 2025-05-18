@@ -1,0 +1,13 @@
+function createCounter() {
+  let count = 0;
+
+  function counter() {
+    return ++count;
+  }
+
+  counter.reset = function () {
+    count = 0;
+  };
+
+  return counter;
+}
