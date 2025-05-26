@@ -1,0 +1,14 @@
+/*Write a JavaScript program that demonstrates the use of a callback function to execute tasks in sequence. Your program should:
+
+Define a function taskOne() that logs "Task 1 completed".
+Define a function taskTwo(callback) that logs "Task 2 completed" and then executes the callback function.
+Call taskTwo(taskOne) to ensure taskOne runs only after taskTwo finishes.*/
+
+function taskOne(){
+  console.log("Task one completed")
+}
+function taskTwo(callback){
+  console.log("Task two completed");
+  callback();
+}
+taskTwo(taskOne);
