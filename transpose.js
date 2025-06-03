@@ -9,3 +9,15 @@ function transposeTheMatrix(N, M, matrix){
     }
   
 }
+/*const N = 3;
+const M = 2;
+
+const matrix = [
+  [1, 2],
+  [3, 4],
+  [5, 6]
+];
+1 2  
+3 4  
+5 6
+ */
