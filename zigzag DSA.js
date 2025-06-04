@@ -16,3 +16,4 @@ function goInZigZag(N, M, matrix){
   }
   console.log(bag);
 }
+//if even row then reverse else straight zigzag
