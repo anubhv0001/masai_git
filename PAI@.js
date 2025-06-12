@@ -69,3 +69,46 @@ catch(error){
 }
 }
 fetchAndFilterProducts(100);
+
+
+function distinctSub(arr,K){
+  let count=0;
+  for (let i=0;i<=arr.length-K;i++){
+    const substr=arr.substring(i,i+K);
+    const mySet=new Set(substr);
+    if (mySet.size===K){
+      count++;
+    }
+  }
+  console.log(count);
+}
+
+
+function runProgram(input) {
+  let res=input.split('\n');
+  let arr=res[1];
+  let K=+res[2];
+  distinctSub(arr,K);
+  
+  
+}
+if (process.env.USER === "") {
+  runProgram(``);
+} else {
+  process.stdin.resume();
+  process.stdin.setEncoding("ascii");
+  let read = "";
+  process.stdin.on("data", function (input) {
+    read += input;
+  });
+  process.stdin.on("end", function () {
+    read = read.replace(/\n$/, "");
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+  });
+  process.on("SIGINT", function () {
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+    process.exit(0);
+  });
+}

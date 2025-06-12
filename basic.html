@@ -1,7 +1,72 @@
+<!--Build a webpage with a sticky header and a fixed footer. The sticky header should remain visible at the top while scrolling, and 
+the fixed footer should always stay at the bottom of the viewport. Add some scrolling content in between.
+
+Requirements:
+The header should use position: sticky and stick to the top of the page after scrolling past it.
+The footer should use position: fixed and remain at the bottom of the viewport.
+The main content section should include at least 10 paragraphs to ensure scrolling behavior.
+Expected Output: A webpage where the header sticks to the top as you scroll and the footer remains fixed at the bottom. -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head> <meta charset="UTF-8">sadest phase</head>
-  <body><h1>Intro</h1>
-  <p>Hello my name is Anubhav singh am from ayodhya,UP.
-  I have completed my btech from mech eng and later switched for cs prep and currently preaparing for software development </p></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+  body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header{
+    position: sticky;
+    top:0;
+    background-color: #333;
+    color: white;
+    padding:15px;
+    text-align: center;
+    z-index: 1000;
+ }
+  footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      z-index: 1000;
+    }
+  main{
+    padding:20px;
+    padding-bottom: 60px;
+  }
+  p{
+    
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+</style>
+ <header>
+    <h1>Sticky Header</h1>
+  </header>
+<body>
+  <main>
+  <p>Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Paragraph 2: Nulla vel metus scelerisque ante sollicitudin.</p>
+    <p>Paragraph 3: Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <p>Paragraph 4: Cras mattis consectetur purus sit amet fermentum.</p>
+    <p>Paragraph 5: Donec sed odio dui. Morbi leo risus, porta ac consectetur ac.</p>
+    <p>Paragraph 6: Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Paragraph 7: Maecenas sed diam eget risus varius blandit sit amet.</p>
+    <p>Paragraph 8: Aenean lacinia bibendum nulla sed consectetur.</p>
+    <p>Paragraph 9: Etiam porta sem malesuada magna mollis euismod.</p>
+    <p>Paragraph 10: Fusce dapibus, tellus ac cursus commodo, tortor mauris.</p>
+  </main>
+  <footer>
+    Fixed footer 
+  </footer>
+  
+</body>
 </html>
