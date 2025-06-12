@@ -1,0 +1,72 @@
+<!-- Create a simple webpage that demonstrates the CSS Box Model by styling three boxes with distinct content, padding, borders,
+  and margins. Each box should have a unique width, padding, border style, and margin configuration. Use box-sizing: content-box for 
+  one box and box-sizing: border-box for another to observe the differences.
+
+Requirements:
+The webpage must contain three div elements styled as boxes.
+Each box should have:
+A unique background color.
+Different padding, border, and margin values.
+Use the box-sizing property on at least two of the boxes with different values (content-box and border-box).
+Add some text inside each box to visualize the content area.
+Expected Output: A webpage displaying three boxes with clear distinctions in their box model properties.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+    .box1{
+      background-color: #ffdddd;
+      padding: 20px;
+      border:4px solid #aa0000;
+      width: 300px;
+      margin:10px;
+      box-sizing: content-box;  
+    }
+      .box2{
+      background-color: #ffdddd;
+      padding: 20px;
+      border:4px solid #aa0000;
+      width: 300px;
+      margin:10px;
+      box-sizing: border-box;  
+    } 
+      .box3{
+      background-color: #ffdddd;
+      padding: 20px;
+      border:4px solid #aa0000;
+      width: 300px;
+      margin:10px;
+       
+    }
+     .label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+</style>
+<body>
+ <div class="box1">
+    <span class="label">Box 1</span>
+    Hello my name is Anubhav singh 
+ </div>
+ <div class="box2">
+    <span class="label">Box 2</span>
+    I want to become a software developer
+ </div>
+ <div class="box3">
+     <span class="label">Box 3</span>
+     And forsure i'll achieve it 
+ </div>
+
+</body>
+</html>
