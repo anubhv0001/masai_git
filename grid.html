@@ -1,0 +1,54 @@
+<!--Design a fully responsive card layout using CSS Grid. The layout should display cards in a grid format, adjusting the number of 
+columns based on the screen width. For example:
+
+Desktop: 4 columns
+Tablet: 2 columns
+Mobile: 1 column
+Each card should contain an image, a title, and a description.
+
+Requirements:
+Use display: grid to create the card layout.
+Define a grid template that adjusts based on the screen size using media queries.
+Each card should:
+Have a fixed height and width (adjustable for smaller screens).
+Include a background color, border, and padding for spacing.
+Ensure that the layout is fully responsive and visually appealing.
+Expected Output: A responsive card layout that adapts seamlessly to various screen sizes.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive card grid</title>
+    <link rel="stylesheet"href="styles.css"/>
+
+</head>
+<body>
+    <h1 class="heading">Responsive card layout</h1>
+    <div class="card-container">
+    <div class="card">
+    <img src="https://picsum.photos/id/237/200/300" alt="Image 1">
+    <h2>Card Tittle 1</h2>
+    <p>am black dog</p>
+    </div>
+    <div class="card">
+    <img src="https://picsum.photos/seed/picsum/200/300
+" alt="Image 1">
+    <h2>Card Tittle 2</h2>
+    <p>This is scenery</p>
+    </div>
+    <div class="card">
+    <img src="https://picsum.photos/200/300?grayscale" alt="Image 1">
+    <h2>Card Tittle 3</h2>
+    <p>This is mountain</p>
+    </div>
+    <div class="card">
+    <img src="https://picsum.photos/200/300/?blur" alt="Image 1">
+    <h2>Card Tittle 4</h2>
+    <p>This is blurred</p>
+    </div>
+    </div>
+    
+</body>
+</html>
